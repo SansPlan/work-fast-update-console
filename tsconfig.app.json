@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "example/**/*",
+    "example/**/*.vue",
+    "src/**/*",
+    "src/**/*.{vue,jsx,tsx,js,ts}"
+  ],
+  "exclude": ["example/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./example/*"]
+    }
+  }
+}
